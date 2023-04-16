@@ -1,3 +1,8 @@
-.todolist{
+.todoList{
     color:brown;
+}
+
+.fontSize {
+    composes: todoList;
+    font-size: 40px; 
 }

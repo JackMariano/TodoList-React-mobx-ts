@@ -15,7 +15,7 @@ export default class Todo extends React.Component{
         this.list = store.list;
         this.text = store.inputtext;
         return (
-        <div className={Styles.todolist}>
+        <div className={Styles.fontSize}>
             <input type="text" value = {this.text} onChange={this.onchange}/> <span><button onClick={this.addTask}>添加</button></span>
             {
                 this.list.map(item=>
