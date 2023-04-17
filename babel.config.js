@@ -14,7 +14,7 @@ module.exports = {
     ["@babel/preset-react", { runtime: "automatic" }],
     "@babel/preset-typescript",
   ],
-  "plugins": [
+  plugins: [
     "@babel/transform-runtime",
     [
       "@babel/plugin-proposal-decorators",

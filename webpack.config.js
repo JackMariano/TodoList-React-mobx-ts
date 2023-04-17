@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  devtool: 'inline-source-map',
   mode: 'development',
   entry: './src/index.tsx',
   output: {
@@ -13,8 +14,8 @@ module.exports = {
     rules: [
       {
         test: /.(ts|tsx)$/, // 匹配.ts, tsx文件
-        use: "babel-loader",
         exclude: /node_modules/,
+        use: "babel-loader",
       },
       {
         test: /.(c|sa|sc)ss$/, //匹配 css、sass、scss 文件
@@ -29,7 +30,7 @@ module.exports = {
             }
           }
         ],
-      },
+      }
     ],
   },
   resolve: {
